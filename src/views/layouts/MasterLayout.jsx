@@ -57,11 +57,14 @@ function MasterLayout() {
                   Validate
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  My Validations
-                </a>
-              </li>
+
+              {user.role === 'admin' && (
+                <li className="nav-item">
+                  <a className="nav-link" href="/validations">
+                    Validations
+                  </a>
+                </li>
+              )}
             </ul>
             <li className="nav-item mx-3">
               <a className="nav-link text-light" href="#">

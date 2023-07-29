@@ -6,6 +6,7 @@ import NotFound from "./views/pages/NotFound";
 import MasterLayout from "./views/layouts/MasterLayout";
 import GuestLayout from "./views/layouts/GuestLayout";
 import Validator from "./views/pages/user/Validator.jsx";
+import ValidationsList from "./views/pages/admin/ValidationsList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/validate",
         element: <Validator />,
+      },
+      {
+        path: "/validations",
+        element: <ValidationsList />,
       },
     ],
   },
